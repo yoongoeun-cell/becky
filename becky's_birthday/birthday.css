@@ -13,7 +13,7 @@ body {
     width: 70vw;
     max-width: 800px;
     height: auto;
-    aspect-ratio: 5 / 2;
+    aspect-ratio: 5 / 2; /* 가로가 더 길고 세로가 짧게 조정 */
     margin: auto;
     cursor: pointer;
     position: absolute;
@@ -25,7 +25,7 @@ body {
     padding: 0;
     transition: all 0.3s ease;
     background-image: url('bbb.jpg'); 
-    background-size: cover;
+    background-size: contain;
     background-position: center;
 }
 
@@ -33,7 +33,7 @@ body {
     color: white;
     font-size: 3.5vw;
     font-family: 'Georgia', 'Times New Roman', serif;
-    padding-top: 50%;
+    padding-top: 40%; /* 세로 크기 조정 */
     text-align: center;
 }
 
@@ -44,7 +44,7 @@ body {
     width: 80vw;
     max-width: 1200px;
     height: auto;
-    aspect-ratio: 5 / 2;
+    aspect-ratio: 6 / 2; /* 가로가 더 길고 세로가 짧게 조정 */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -63,7 +63,7 @@ body {
 
 .letter-inner {
     background-image: url('first.jpg');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     padding: 10px;
     margin: 5px;
@@ -132,7 +132,6 @@ button {
     background-size: cover; /* 배경 이미지 크기 맞추기 */
 }
 
-
 /* 애니메이션 효과 부분 !!! */
 @keyframes openLetter {
     0% {
@@ -155,8 +154,6 @@ button {
         transform: translateY(0);
     }
 }
-
-
 
 /* 배경 애니메이션 */
 @keyframes rotateBackground {
