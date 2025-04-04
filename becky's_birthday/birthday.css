@@ -131,16 +131,21 @@ button {
     }
 
    .mar-img {
-        width: 25%;
-        max-width: 100px;
+    width: 25%;
+    max-width: 100px;
+    right: 70%;
+    top: 30%;
+    left: 60%;
+    transform: translateX(-60%);
+        
     }
     .barbie-img {
         width: 25%;
         max-width: 100px;
         right: 70%;
-        top: 10%;
-        left: 50%;
-        transform: translateX(-50%);
+        top: 30%;
+        left: 60%;
+        transform: translateX(-60%);
     }
 }
 
