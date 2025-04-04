@@ -24,16 +24,18 @@ body {
     max-width: 600px;
 }
 
-/* 초대장 박스 */
 .invitation {
-    width: 90%;
-    max-width: 450px;
-    aspect-ratio: 3 / 4; /* 가로 세로 비율 유지 */
+    width: 60%; /* 초대장을 더 작게 조정 */
+    max-width: 250px; /* 최대 크기 줄임 */
+    aspect-ratio: 3 / 4;
     cursor: pointer;
-    position: relative;
+    position: absolute; /* 초대장을 바비 인형 옆에 배치하기 위해 변경 */
+    top: 50%; /* 바비 인형과 같은 높이 */
+    left: 75%; /* 바비 인형 오른쪽에 위치 */
+    transform: translate(-50%, -50%);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    background-image: url('bbb.jpg'); 
+    background-image: url('bbb.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -43,9 +45,9 @@ body {
 
 .invitation p {
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem; /* 글자 크기 줄임 */
     font-family: 'Georgia', 'Times New Roman', serif;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     text-align: center;
 }
 
@@ -121,9 +123,10 @@ button {
     .invitation {
         width: 90%;
     }
-
-    .invitation p {
-        font-size: 1.5rem;
+.invitation {
+        width: 50%; /* 모바일에서도 작게 유지 */
+        max-width: 200px;
+        left: 75%; /* 바비 인형 오른쪽에 유지 */
     }
 
     .letter {
