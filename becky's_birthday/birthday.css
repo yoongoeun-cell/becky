@@ -23,7 +23,7 @@ body {
 }
 
 .invitation {
-    width: 80%;
+    width: 40%;
     max-width: 100px; /* 초대장 크기 축소 */
     aspect-ratio: 3 / 4;
     cursor: pointer;
