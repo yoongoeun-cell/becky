@@ -57,8 +57,8 @@ body {
 
 .letter-inner {
     width: 30vw;
-    max-width: 400px;
-    height: 500px;
+    max-width: 300px;
+    height: 200px;
     aspect-ratio: 4 / 3; /* 세로가 더 짧게 조정 */
     position: relative;
     border-radius: 10px;
@@ -134,7 +134,11 @@ button {
         transform: translateY(0);
     }
 }
-
+/* 배경에 적용할 애니메이션 */
+.fade-background {
+    animation: rotateBackground s forwards; /* 2초 동안 회전 */
+    background-size: cover; /* 배경 이미지 크기 맞추기 */
+}
 
 
 /* 배경 애니메이션 */
