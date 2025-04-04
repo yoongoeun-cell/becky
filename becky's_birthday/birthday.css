@@ -1,3 +1,4 @@
+/* 전체 스타일 */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -14,6 +15,7 @@ body {
     overflow: hidden;
 }
 
+/* 초대장 */
 .invitation-wrapper {
     display: flex;
     flex-direction: column;
@@ -22,15 +24,16 @@ body {
     max-width: 600px;
 }
 
+/* 초대장 박스 */
 .invitation {
     width: 90%;
     max-width: 450px;
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 3 / 4; /* 가로 세로 비율 유지 */
     cursor: pointer;
     position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    background-image: url('bbb.jpg');
+    background-image: url('bbb.jpg'); 
     background-size: cover;
     background-position: center;
     display: flex;
@@ -46,6 +49,7 @@ body {
     text-align: center;
 }
 
+/* 편지지 */
 .letter {
     display: none;
     position: fixed;
@@ -56,12 +60,14 @@ body {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%);
     border-radius: 15px;
-    opacity: 1;
+    opacity: 0;
+    transform: scale(0);
     animation: openLetter 1s forwards;
 }
 
+/* 편지지 내부 */
 .letter-inner {
     background-image: url('first.jpg');
     background-size: contain;
@@ -75,25 +81,26 @@ body {
     justify-content: center;
 }
 
+/* 바비 인형 & 다른 이미지 */
 .barbie-img, .mar-img {
     width: 30%;
     max-width: 120px;
     position: absolute;
-    display: block;
+    display: none;
     z-index: 10;
 }
 
 .barbie-img {
     top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
+    right: 70%;
 }
 
 .mar-img {
     top: 10%;
-    left: 10%;
+    left: 5%;
 }
 
+/* 버튼 */
 button {
     margin-top: 20px;
     padding: 10px 20px;
@@ -104,6 +111,7 @@ button {
     cursor: pointer;
 }
 
+/* 반응형 스타일 */
 @media screen and (max-width: 768px) {
     body {
         background-size: cover;
@@ -120,20 +128,101 @@ button {
 
     .letter {
         width: 90%;
-        height: auto;
     }
 
-    .mar-img {
+   .mar-img {
         width: 25%;
         max-width: 100px;
-        left: 50%;
-        transform: translateX(-50%);
     }
-    
     .barbie-img {
         width: 25%;
         max-width: 100px;
+        right: 70%;
+        top: 10%;
         left: 50%;
         transform: translateX(-50%);
+    }
+}
+
+.mar-img {
+    width: 100%;
+    max-width: 500px;
+    display: none;
+    height: auto;
+    position: absolute; /* 절대 위치로 설정 */
+    top: -5%; /* 화면의 중앙에 맞게 위치 설정 */
+    left: 7%; /* 편지지 오른쪽에 배치 */
+    transform: translateX(0%); /* 바로 옆에 배치되도록 설정 */
+    z-index: 10; /* 바비 인형이 편지지 위에 위치하도록 설정 */
+  
+}
+
+
+h2 {
+    font-size: 24px;
+    color: #ff66b2;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+button {
+    margin-top: 600px;
+    padding: 10px 20px;
+    background-color: #ff66b2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* 배경에 적용할 애니메이션 */
+.fade-background {
+    animation: rotateBackground 1s forwards; /* 2초 동안 회전 */
+    background-size: cover; /* 배경 이미지 크기 맞추기 */
+}
+
+
+/* 애니메이션 효과 부분 !!! */
+@keyframes openLetter {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes showLetterContent {
+    0% {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* 배경 애니메이션 */
+@keyframes rotateBackground {
+    0% {
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+    50% {
+        opacity: 0.5;
+        transform: rotate(180deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(360deg);
     }
 }
