@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:not 예제</title>
+    <style>
+        p {
+            font-size: 20px;
+        }
+
+        /* "특별한 문장"이 아닌 모든 문장에 스타일 적용 */
+        p:not(.special) {
+            color: palevioletred;
+            font-weight: bold;
+            font-size: 50px
+        }
+    </style>
+</head>
+<body>
+    <p>일반 문장 1</p>
+    <p class="special">이 문장은 특별해서 스타일이 안 바뀜!</p>
+    <p>일반 문장 2</p>
+</body>
+</html>

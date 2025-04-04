@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .container {
+            width: 100px;
+            height: 100px;
+            border: 1px solid #ccc;
+        }
+        .overflow-visible {
+            overflow: visible;
+        }
+        .overflow-hidden {
+            overflow: hidden;
+        }
+        .overflow-scroll {
+            overflow: scroll;
+        }
+        .overflow-auto {
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container overflow-visible">
+        <p>overflow: visible - 오버플로우된 내용을 자르지 않고 보여줍니다.</p>
+    </div>
+    <br>
+    <div class="container overflow-hidden">
+        <p>overflow: hidden - 오버플로우된 내용을 숨깁니다.</p>
+    </div>
+    <br>
+    <div class="container overflow-scroll">
+        <p>overflow: scroll - 내용을 숨기고 수평 및 수직 스크롤바를 표시</p>
+    </div>
+    <br>
+    <div class="container overflow-auto">
+        <p>overflow: auto - 오버플로우되면 자동으로 수평 수직 스크롤바 표시</p>
+    </div>
+</body>
+</html>

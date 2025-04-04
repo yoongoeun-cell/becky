@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 선택자 예제</title>
+    <style>
+        /* .class1 > .class2: .class1의 바로 자식인 .class2만 선택 */
+        .class1 > .class2 {
+            color: blue;
+        }
+
+        /* .class1, .class2: .class1과 .class2 모두 선택 */
+        .class1, .class2 {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="class1">
+        <p class="class2">이 문장은 파란색과 굵게 표시됩니다.</p>
+        <div class="class1">
+            <p class="class2">이 문장도 파란색과 굵게 표시됩니다.</p>
+        </div>
+    </div>
+
+    <div class="class1">
+        <p>이 문장은 굵게 표시됩니다.</p>
+    </div>
+
+    <div class="class2">
+        <p>이 문장은 굵게 표시됩니다.</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>과제 5-1</title>
+</head>
+<body>
+  <h2>막강한 sum 함수</h2>
+  <label>숫자를 입력하세요</label><br>
+  <input type="text" id="userInput" placeholder="숫자 입력"><br><br>
+  <button onclick="showResult()">확인</button>
+  <p id="result"></p>
+
+  <script>
+    // sum 함수 정의 (스프레드 연산자 + rest 매개변수 사용)
+    function sum(arr, ...nums) {
+      // arr은 배열, nums는 나머지 인수들
+      let total = 0;
+
+      // arr 요소 더하기
+      for (let n of arr) {
+        total += n;
+      }
+
+      // 나머지 인수들도 더하기
+      for (let n of nums) {
+        total += n;
+      }
+
+      return total;
+    }
+
+    function showResult() {
+      const input = document.getElementById('userInput').value;
+      const num = parseFloat(input); // 문자열을 숫자로 변환
+
+      const arr = [1, 4, 5];
+      const result = sum(arr, num);
+
+      document.getElementById('result').innerText = 
+        `[${arr}] 요소들과 ${num}의 합 = ${result} 입니다.`;
+    }
+  </script>
+</body>
+</html>

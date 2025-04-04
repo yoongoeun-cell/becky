@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:focus 예제</title>
+    <style>
+        input {
+            padding: 8px;
+            border: 2px solid gray;
+            font-size: 16px;
+        }
+
+        /* 입력창을 클릭하면 테두리 색 변경 */
+        input:focus {
+            border-color: blue;
+            background-color: lightyellow;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="클릭하면 스타일 변함">
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> DIV Layout Coding </title>
+    <style>
+        #wrap {
+            position: relative;
+            width: 610px;
+            height: 430px;
+            margin: auto;
+            border: 2px solid #333;
+            /*실선 만들기*/
+            background-color: #f0f0f0;
+        }
+
+        #header {
+            height: 50px;
+            background: #00a0a0;
+            
+        }
+
+        #main {
+            margin-top: 10px;
+            height: 300px;
+        }
+
+        
+
+        #footer {
+            position: absolute;
+            bottom: 0;
+            height: 50px;
+            background: #00a0a0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="header"></div>
+        <div id ="menu"></div>
+        <div id="main">
+            <div class="content"></div>
+            <div id="main_content"></div>
+            <div class="comtent"></div>
+        </div>
+        <div id="footer"></div>
+    </div>
+
+</body>
+
+</html>

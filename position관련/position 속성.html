@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+/*요소으*/
+
+<head>
+    <style>
+        /*
+        요소의 위치를 어떻게 정할지 결정하는 css속성
+        
+        static: 기본 위치. 변경하지 않으면 이 값입니다.
+        relative: 원래 위치에서 상대적으로 이동.
+        absolute: 부모 요소(위치 지정된 요소)를 기준으로 배치되고, 흐름에서 벗어납니다.
+        fixed: 뷰포트를 기준으로 위치가 고정되어, 스크롤에 영향을   받지 않습니다.
+        sticky: 특정 위치에서 고정되며, 스크롤을 내리면 고정됩니다.
+        */
+        .box {
+            width: 50px;
+            height: 50px;
+            position: static;
+        }
+
+        .box1 {
+            background: red;
+            top: 0px;
+            left: 0px;
+        }
+
+        .box2 {
+            background: blue;
+            top: 50px;
+            left: 50px;
+        }
+
+        .box3 {
+            background: green;
+            top: 100px;
+            left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+</body>
+
+</html>

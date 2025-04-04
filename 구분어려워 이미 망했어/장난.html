@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>뽀롱?</title>
+    <style>
+        body {
+            text-align: center;
+            transition: all 0.5s;
+        }
+        h1 {
+            font-size: 7em;
+            transition: all 0.5s;
+        }
+        .crazy-button {
+            font-size: 7em;
+            padding: 10px 20px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">뭘 봐</h1>
+    <button class="crazy-button" onclick="makeCrazy()">눌러보셈</button>
+
+    <script>
+        let count = 0;
+        function makeCrazy() {
+            count++;
+            const body = document.body;
+            const title = document.getElementById("title");
+
+            if (count == 1) {
+                title.innerText = "누르라고 누르냐 ㅋ";
+                body.style.backgroundColor = "blue";
+            } else if (count == 2) {
+                title.innerText = "진짜 이상해";
+                body.style.backgroundColor = "pink";
+                body.style.transform = "rotate(10deg)";
+            } else if (count == 3) {
+                title.innerText = "이제 멈출 수 없음";
+                body.style.backgroundColor = "red";
+                body.style.transform = "rotate(30deg) scale(1.2)";
+            } else {
+                title.innerText = "망 ~~ ㅋㅋㅋ";
+                body.style.backgroundColor = "black";
+                body.style.color = "white";
+                body.style.transform = "rotate(180deg) scale(2)";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> DIV Layout Coding </title>
+    <style>
+        #wrap {
+            width: 610px;
+            height: 430px;
+            margin: auto;
+            background-color: #f0f0f0;
+        }
+
+        #header {
+           height: 55px;
+           background-image: url('야채가게 이미지/tt.png');
+           background-size: 100%;
+        }
+
+        #home{
+            width: 100%;
+            height: 300px;
+            background-image: url('야채가게 이미지/top.png');
+            background-size: cover;
+            
+        }
+
+        .bar{
+
+        }
+
+
+
+
+        #footer {
+
+            height: 50px;
+            margin-top: 10px;
+            background: #00a0a0;
+            border: 1px solid #333;
+            width: 100%;
+            background-image: url('야채가게 이미지/bottom.png');
+            /* 올바른 경로 */
+            background-size: cover;
+            /* 이미지가 영역을 덮도록 크기 조절 */
+            background-position: center;
+            /* 이미지가 중앙에 위치하도록 */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="header"></div>
+        <div id="main">
+        <div id="home"></div>
+        <div class="bar bar1"></div>
+        <div class="bar bar2"> <img src="야채가게 이미지/menu_back.jpg"></div>
+        <div class="bar bar3"></div>
+        <div class="bar bar4"></div>
+        <div class="bar bar5"></div>
+        <div class="bar bar6"></div>
+        <div class="bar bar7"></div>
+        <div class="bar bar8"></div>
+        <div class="bar bar9"></div>
+        </div>
+        <div id="footer"></div>
+    </div>
+
+</body>
+
+</html>

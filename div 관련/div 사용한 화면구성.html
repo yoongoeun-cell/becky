@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> DIV Layout Coding </title>
+    <style>
+        #wrap {
+            width: 610px;
+            height: 430px;
+            margin: auto;
+            border: 2px solid #333;
+            /*실선 만들기*/
+            background-color: #f0f0f0;
+        }
+
+        #header {
+            height: 50px;
+            background: #00a0a0;
+            border: 1px solid #333;
+        }
+
+        #main {
+            margin-top: 10px;
+            height: 300px;
+        }
+
+        #left_main {
+            height: 300px;
+            width: 25%;
+            background: #a0a0a0;
+            /* 밝은 회색 배경색 */
+            margin-right: 10px;
+            float: left;
+            border: 1px solid #333;
+        }
+
+        #right_main {
+            height: 300px;
+            width: 70%;
+            background: #a0a0a0;
+            /* 밝은 회색 배경색 */
+            float: left;
+            border: 1px solid #333;
+        }
+
+        #footer {
+            height: 50px;
+            margin-top: 10px;
+            background: #00a0a0;
+            border: 1px solid #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="header"></div>
+        <div id="main">
+            <div id="left_main"></div>
+            <div id="right_main"></div>
+        </div>
+        <div id="footer"></div>
+    </div>
+
+</body>
+
+</html>

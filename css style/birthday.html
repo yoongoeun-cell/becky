@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>친구 생일파티 초대장</title>
+    <link rel="stylesheet" href="birthday.css">
+</head>
+<body>
+    <div class="invitation-wrapper">
+        <div class="invitation" id="invitation" onclick="openLetter()">
+            <div class="envelope">
+                <div class="flap"></div>
+                <div class="body"></div>
+            </div>
+            <p>초대장을 열어보세요!</p>
+        </div>
+        <img id="barbie" src="barbie.png" alt="Barbie" class="barbie-img">
+        <img id="mar" src="mar.png" alt="mar" class="mar-img">
+
+
+        <div class="letter" id="letter">
+            <div class="letter-content">
+                <div class="letter-inner">
+                    <button onclick="closeLetter()">오고싶다면 클릭 >< </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="birthday.js"></script>
+</body>
+</html>

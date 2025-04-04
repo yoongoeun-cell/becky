@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자식 선택자 예제</title>
+    <style>
+        div > p {
+            color: red;  /* div의 직속 자식인 p만 빨간색 */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>이 문장은 빨간색으로 표시됨</p>
+        <div>
+            <p>이 문장은 빨간색으로 표시되지 않음 (부모 div의 자식이 아님)</p>
+        </div>
+    </div>
+</body>
+</html>
