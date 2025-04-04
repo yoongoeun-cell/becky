@@ -70,7 +70,7 @@ body {
     background-position: center;
 }
 
-.barbie-img, .mar-img {
+.barbie-img{
     width: 15vw;
     max-width: 120px;
     height: auto;
@@ -84,9 +84,6 @@ body {
     left: 10%; /* 왼쪽으로 이동 */
 }
 
-.mar-img {
-    left: 30%; /* 왼쪽으로 이동 */
-}
 
 button {
     margin-top: 2vh;
