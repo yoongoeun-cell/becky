@@ -83,7 +83,7 @@ body {
     width: 25%;
     max-width: 100px; /* 크기 축소 */
     position: absolute;
-    display: none;
+    display: none; /* 처음에 안 보이도록 설정 */
     z-index: 10;
 }
 
