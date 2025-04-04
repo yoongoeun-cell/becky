@@ -5,21 +5,23 @@ body {
     background-image: url('bf.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    width: 1024px; /* PC 화면 크기로 고정 */
-    margin: 0 auto;
-    overflow-x: hidden; /* 가로 스크롤 방지 */
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 /* 초대장 */
 .invitation {
-    width: 500px;
-    height: 400px;
-    margin: auto;
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    aspect-ratio: 4 / 3;
     cursor: pointer;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     padding: 0;
@@ -28,23 +30,26 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 .invitation p {
     color: white;
-    font-size: 45px;
+    font-size: 2rem;
     font-family: 'Georgia', 'Times New Roman', serif;
-    padding-top: 400px;
-    padding-left: 25px;
+    margin-bottom: 20px;
 }
 
 /* 편지지 */
 .letter {
     display: none;
-    position: absolute;
+    position: fixed;
     background-color: white;
-    width: 1300px;
-    height: 700px;
+    width: 90%;
+    max-width: 600px;
+    height: 70vh;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
     top: 50%;
     left: 50%;
@@ -56,37 +61,53 @@ body {
 }
 
 /* 바비 인형 이미지 */
-.barbie-img {
-    width: 100%;
-    max-width: 350px;
-    display: none;
-    height: auto;
+.barbie-img, .mar-img {
+    width: 40%;
+    max-width: 200px;
     position: absolute;
-    top: 10%;
-    left: 25%;
-    transform: translateX(0%);
+    display: none;
     z-index: 10;
 }
 
+.barbie-img {
+    top: 5%;
+    right: 5%;
+}
+
 .mar-img {
-    width: 100%;
-    max-width: 500px;
-    display: none;
-    height: auto;
-    position: absolute;
-    top: -5%;
-    left: 7%;
-    transform: translateX(0%);
-    z-index: 10;
+    top: 5%;
+    left: 5%;
 }
 
 /* 버튼 */
 button {
-    margin-top: 600px;
+    margin-top: 20px;
     padding: 10px 20px;
     background-color: #ff66b2;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+/* 반응형 디자인 */
+@media screen and (max-width: 768px) {
+    .invitation {
+        width: 90%;
+        aspect-ratio: 3 / 4;
+    }
+
+    .invitation p {
+        font-size: 1.5rem;
+    }
+
+    .letter {
+        width: 95%;
+        height: 80vh;
+    }
+
+    .barbie-img, .mar-img {
+        width: 30%;
+        max-width: 150px;
+    }
 }
