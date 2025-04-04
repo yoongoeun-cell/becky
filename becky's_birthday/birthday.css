@@ -9,10 +9,10 @@ body {
 }
 
 .invitation {
-    width: 80vw;
-    max-width: 500px;
+    width: 85vw;
+    max-width: 600px;
     height: auto;
-    aspect-ratio: 5 / 4;
+    aspect-ratio: 6 / 3;
     margin: auto;
     cursor: pointer;
     position: absolute;
@@ -32,17 +32,17 @@ body {
     color: white;
     font-size: 4vw;
     font-family: 'Georgia', 'Times New Roman', serif;
-    padding-top: 75%;
+    padding-top: 60%;
     text-align: center;
 }
 
 .letter {
     display: none;
     position: absolute;
-    width: 90vw;
-    max-width: 1200px;
+    width: 95vw;
+    max-width: 1300px;
     height: auto;
-    aspect-ratio: 13 / 7;
+    aspect-ratio: 16 / 5;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
