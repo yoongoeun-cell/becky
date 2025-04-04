@@ -16,9 +16,9 @@ body {
 /* 초대장 크기 전체적으로 작게 조정 - 이미지 한 장 크기만큼 */
 .invitation {
     width: 30vw;
-    max-width: 400px;
+    max-width: 300px;
     height: auto;
-    aspect-ratio: 5 / 3; /* 세로가 더 짧게 조정 */
+    aspect-ratio: 4 / 3; /* 세로가 더 짧게 조정 */
     position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
@@ -39,10 +39,10 @@ body {
 .letter {
     display: none;
     position: relative;
-    width: 40vw;
-    max-width: 600px;
+    width: 30vw;
+    max-width: 300px;
     height: auto;
-    aspect-ratio: 5 / 3;
+    aspect-ratio: 4 / 3;
     background-color: white;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
     border-radius: 15px;
