@@ -5,24 +5,23 @@ body {
     background-image: url('bf.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 /* 초대장 크기 전체적으로 작게 조정 */
 .invitation {
-    width: 50vw;
-    max-width: 300px;
+    width: 45vw;
+    max-width: 500px;
     height: auto;
     aspect-ratio: 5 / 2; /* 가로가 더 길고 세로가 짧게 조정 */
-    margin: auto;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    padding: 0;
     transition: all 0.3s ease;
     background-image: url('bbb.jpg'); 
     background-size: contain;
@@ -31,23 +30,19 @@ body {
 
 .invitation p {
     color: white;
-    font-size: 2.5vw;
+    font-size: 2vw;
     font-family: 'Georgia', 'Times New Roman', serif;
-    padding-top: 30%; /* 세로 크기 조정 */
     text-align: center;
 }
 
 /* 편지 크기 전체적으로 작게 조정 */
 .letter {
     display: none;
-    position: absolute;
-    width: 60vw;
-    max-width: 300px;
+    position: relative;
+    width: 55vw;
+    max-width: 800px;
     height: auto;
-    aspect-ratio: 6 / 2; /* 가로가 더 길고 세로가 짧게 조정 */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    aspect-ratio: 6 / 2;
     background-color: white;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
     border-radius: 15px;
@@ -76,13 +71,12 @@ body {
 }
 
 .barbie-img, .mar-img {
-    width: 25vw;
-    max-width: 180px;
+    width: 20vw;
+    max-width: 150px;
     height: auto;
     display: none;
     position: absolute;
     top: 15%;
-    transform: translateX(0%);
     z-index: 10;
 }
 
@@ -95,9 +89,9 @@ body {
 }
 
 button {
-    margin-top: 3vh;
+    margin-top: 2vh;
     padding: 1vw 2vw;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     background-color: #ff66b2;
     color: white;
     border: none;
@@ -107,18 +101,16 @@ button {
 
 @media screen and (max-width: 768px) {
     .invitation {
-        width: 65vw;
-        height: auto;
+        width: 60vw;
     }
 
     .letter {
-        width: 75vw;
-        height: auto;
+        width: 70vw;
     }
 
     .barbie-img, .mar-img {
-        width: 20vw;
-        max-width: 150px;
+        width: 18vw;
+        max-width: 120px;
     }
 
     button {
@@ -126,13 +118,6 @@ button {
     }
 }
 
-/* 배경에 적용할 애니메이션 */
-.fade-background {
-    animation: rotateBackground s forwards; /* 2초 동안 회전 */
-    background-size: cover; /* 배경 이미지 크기 맞추기 */
-}
-
-/* 애니메이션 효과 부분 !!! */
 @keyframes openLetter {
     0% {
         opacity: 0;
@@ -152,21 +137,5 @@ button {
     100% {
         opacity: 1;
         transform: translateY(0);
-    }
-}
-
-/* 배경 애니메이션 */
-@keyframes rotateBackground {
-    0% {
-        opacity: 0;
-        transform: rotate(0deg);
-    }
-    50% {
-        opacity: 0.5;
-        transform: rotate(180deg);
-    }
-    100% {
-        opacity: 1;
-        transform: rotate(360deg);
     }
 }
