@@ -130,9 +130,14 @@ button {
         width: 90%;
     }
 
-    .barbie-img, .mar-img {
+   .mar-img {
         width: 25%;
         max-width: 100px;
+    }
+    .barbie-img {
+        width: 25%;
+        max-width: 100px;
+        right: 70%;
     }
 }
 
