@@ -18,12 +18,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    max-width: 200px; /* 크기 축소 */
+    max-width: 100px; /* 크기 축소 */
 }
 
 .invitation {
-    width: 40%;
+    width: 80%;
     max-width: 100px; /* 초대장 크기 축소 */
     aspect-ratio: 3 / 4;
     cursor: pointer;
@@ -54,7 +53,7 @@ body {
     position: fixed;
     background-color: white;
     width: 80%;
-    max-width: 150px; /* 편지지 크기 축소 */
+    max-width: 2-0px; /* 편지지 크기 축소 */
     aspect-ratio: 3 / 4;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
     top: 50%;
@@ -71,8 +70,8 @@ body {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
+width: 80%;
+    max-width: 2-0px; /* 편지지 크기 축소 */
     display: flex;
     flex-direction: column;
     align-items: center;
