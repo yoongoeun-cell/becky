@@ -49,22 +49,7 @@ body {
     text-align: center;
 }
 
-.letter {
-    display: none;
-    position: fixed;
-    background-color: white;
-    width: 80%;
-    max-width: 150px; /* 편지지 크기 축소 */
-    aspect-ratio: 3 / 4;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 15px;
-    opacity: 0;
-    transform: scale(0);
-    animation: openLetter 1s forwards;
-}
+
 
 .letter-inner {
     background-image: url('first.jpg');
