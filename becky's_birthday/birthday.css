@@ -112,7 +112,7 @@ button {
         font-size: 1.5vw;
     }
 }
-
+/* 애니메이션 효과 부분 !!! */
 @keyframes openLetter {
     0% {
         opacity: 0;
@@ -132,5 +132,23 @@ button {
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+
+
+/* 배경 애니메이션 */
+@keyframes rotateBackground {
+    0% {
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+    50% {
+        opacity: 0.5;
+        transform: rotate(180deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(360deg);
     }
 }
